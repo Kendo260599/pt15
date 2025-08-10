@@ -1,0 +1,11 @@
+# Bỏ qua các thư mục cài đặt của Node.js, Python, v.v.
+node_modules/
+venv/
+__pycache__/
+
+# Bỏ qua các file hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Bỏ qua các file cấu hình của VS Code
+.vscode/

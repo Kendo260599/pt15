@@ -1,0 +1,172 @@
+:root {
+    --primary-color: #2980b9;
+    --secondary-color: #3498db;
+    --background-color: #f0f2f5;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --light-gray: #ecf0f1;
+    --good-color: #27ae60;
+    --bad-color: #c0392b;
+    --solution-color: #f39c12;
+}
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+
+header .subtitle {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.card {
+    background: var(--card-background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.3);
+}
+
+#result-section h2 {
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.placeholder {
+    color: #777;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#result-content p {
+    margin: 10px 0;
+}
+
+#result-content .highlight {
+    font-weight: 700;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.highlight.good { background-color: var(--good-color); }
+.highlight.bad { background-color: var(--bad-color); }
+.highlight.solution { background-color: var(--solution-color); }
+
+#result-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#result-content li {
+    padding: 8px;
+    border-bottom: 1px dashed var(--light-gray);
+}
+
+#result-content li:last-child {
+    border-bottom: none;
+}
+
+#result-content strong {
+    color: var(--primary-color);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #888;
+}
